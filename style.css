@@ -10,32 +10,114 @@ header {
     justify-content: space-between;
 }
 
+h1 {
+    font-weight: 100;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+h1, h2 {
+    margin: 0px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #7d97ad;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 20px 0px 5px 0;
+}
+
+a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fb8d22;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 ul {
     list-style: none;
 }
 
+p {
+    font-size: 14px;
+    color: #a1a1a1;
+    padding: 0 20px;
+}
+
+section {
+    padding: 0 10px;
+}
+
 footer {
     border-top: 1px solid #e7e7e7;
-}
-
-.container {
-    width: 100%;
-}
-
-.cafe {
-    /* display: inline-block; */
+    text-align: right;
+    padding: 15px;
+    font-style: italic;
+    color: #7D97AD;
+    margin: 50px 0 0 0;
 }
 
 .cafe ion-icon {
     width: 50px;
     height: 50px;
+    color: #fb8d22;
 }
 
 .site-title {
     text-align: right;
-    /*display: inline-block;*/
 }
 
-h1, h2 {
-    margin: 0px;
+.banner {
+    margin: 0 0 50px 0;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.gallery li {
+    width: 32%;
+    text-align: center;
+}
+
+.img-container {
+    width: 100%;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    h1 {
+        font-size: 24px;
+    }
+    .gallery {
+        display: contents;
+    }
+    .gallery li {
+        width: 100%;
+        margin: 20px 0 50px 0;
+    }
 }
